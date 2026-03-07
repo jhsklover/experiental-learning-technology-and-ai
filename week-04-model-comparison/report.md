@@ -24,6 +24,7 @@ week-04-lab-instructions.md
 
 **Evaluation criteria:** label accuracy, confidence score, speed, ease of 
 integration in n8n 
+
 ## Results Summary 
 | Record | Sentiment | Zero-Shot | NER Entities | Groq | 
 |--------|-----------|-----------|-------------|------| 
@@ -33,10 +34,9 @@ integration in n8n
 | 4 | | | | | 
 | 5 | | | | | 
 ## Analysis 
-**Where models agreed:** [Which records did all models classify the same way?] 
+**Where models agreed:** None of the records produced results where all of the models agreed. Full consistency was not achieved across all models.
 **Where models disagreed:** [Which records got different classifications? What 
 might explain the difference?] 
-2026-02-26
 **Most accurate model overall:** [Based on your 5 records, which model gave the 
 most sensible results?] 
 **Fastest/most practical:** [Which model would be easiest to use at scale?] 
