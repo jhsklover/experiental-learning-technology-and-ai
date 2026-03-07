@@ -1,8 +1,9 @@
 # Model Comparison Report — Week 4 
-**Name:** [Your Name] 
-**Date:** [Date] 
-**Capstone Project:** [Project name from Week 3] 
-**My Component:** [Which component you're building] 
+**Name:** Jack Sklover 
+**Date:** 03/08/2026
+**Capstone Project:** Financial Fraud Detection System
+**My Component:** Transaction Ingestion Workflow and Dashboard
+
 ## Test Setup 
 **Input dataset:** 5 [domain] text samples covering: - 2 clearly concerning/high-severity records - 1 ambiguous/edge case record - 2 routine/benign records 
 8 / 14
