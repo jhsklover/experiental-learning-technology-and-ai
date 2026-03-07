@@ -9,6 +9,5 @@ Tested 4 AI models on 5 fraud investigation text samples to evaluate their suita
 - Groq Llama 3.1 8B
 
 ## Finding 
-Recommended HF NER (bert-large-NER) and Groq Llama 3.1 8B for the Transaction Ingestion Workflow because they were the most accurate during the data analysis, and provided insight toward the data's important entities and properties, respectively.
-
+Groq Llama 3.1 8B for the Transaction Ingestion Workflow because it provided the most accurate insight toward the data's properties and risk level.
 See `report.md` for full analysis.
