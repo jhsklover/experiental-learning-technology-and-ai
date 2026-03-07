@@ -28,11 +28,11 @@ integration in n8n
 ## Results Summary 
 | Record | Sentiment | Zero-Shot | NER Entities | Groq | 
 |--------|-----------|-----------|-------------|------| 
-| 1 | [label] ([score]) | [label] | [entities found] | [classification] | 
-| 2 | | | | | 
-| 3 | | | | | 
-| 4 | | | | | 
-| 5 | | | | | 
+| 1 | NEGATIVE (0.9812) | routine transaction | N/A | HIGH | 
+| 2 | NEGATIVE (0.9544) | fraudulent activity | N/A | ROUTINE | 
+| 3 | NEGATIVE (0.9100) | routine transaction | "Miami" | CRITICAL | 
+| 4 | NEGATIVE (0.9936) | routine transaction | N/A | HIGH | 
+| 5 | NEGATIVE (0.9946) | routine transaction | N/A | ROUTINE | 
 ## Analysis 
 **Where models agreed:** None of the records produced results where all of the models agreed. Full consistency was not achieved across all models.
 **Where models disagreed:** [Which records got different classifications? What 
