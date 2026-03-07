@@ -1,7 +1,11 @@
 # Model Comparison Report — Week 4 
+
 **Name:** Jack Sklover 
+
 **Date:** 03/08/2026
+
 **Capstone Project:** Financial Fraud Detection System
+
 **My Component:** Transaction Ingestion Workflow and Dashboard
 
 ## Test Setup 
