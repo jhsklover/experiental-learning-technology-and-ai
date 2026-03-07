@@ -1,0 +1,29 @@
+﻿input_text,model_1_sentiment_label,model_1_sentiment_score,model_2_zeroshot_label,model_2_zeroshot_score,model_3_ner_entities,model_4_groq_classification,notes,tested_at
+"Wire transfer of $47,500 initiated from new device — international destination — account opened 3 days ago",NEGATIVE,0.9812,routine transaction,0.0132,,"CLASSIFICATION: HIGH
+
+Reason: The combination of a wire transfer of a significant amount, use of a new device for online banking, an international destination, and a recently opened account (less than 4 days ago) indicates a heightened risk of unauthorized or fraudulent activity.","1. The sentiment model correctly identified a negative sentiment, as the message points to suspicious activity.
+2. Zero-Shot classified the record as a routine transaction, which does not make sense.
+3. NER did not extract any entities.
+4. Groq's LLM classification identified that the fraud risk is high, which is accurate to what the input text suggests. This is consistent with the Sentiment HF model but contradicts the HF Zero-Shot model.
+5. LLM Groq and HF Sentiment produced consistent results that agree with each other and disagree with HF Zero-Shot.",3/6/2026 16:24
+"Monthly salary deposit of $4,200 processed — expected amount from known employer",NEGATIVE,0.9544,fraudulent activity,0.0018,,"ROUTINE. The transaction amount and employer match the customer's known profile, indicating minimal risk.","1. The message points to routine activity which is actually beneficial to the employee; however, the sentiment model labelled the input text negative which is inaccurate.
+2. Zero-Shot classified the record as a fraudulent transaction, which does not make sense.
+3. NER did not extract any entities.
+4. Groq LLM classified the record as routine, which is accurate to the statement. This directly contrasts with both HF models, as they inaccurately identified the record as negative and fraudulent.
+5. Groq LLM directly disagreed with HF Zero-Shot and HF Sentiment, which identified negative sentiment and fraudulent activity.",3/6/2026 16:24
+Credit card used for 12 transactions in 4 countries within 6 hours — cardholder in Miami,NEGATIVE,0.9100,routine transaction,0.0100,"{""entity_group"":""LOC"",""score"":0.99885714,""word"":""Miami"",""start"":83,""end"":88}","CRITICAL. The suspicious behavior of multiple transactions across different countries in a short timeframe and the card's location in the US, where the customer is likely not physically present, indicates a high likelihood of card fraud.","1. The sentiment model correctly identified a negative sentiment, as the message reflects suspicious activity.
+2. Zero-Shot classified the record as a routine transaction, which does not make sense.
+3. NER extracted one entity: Miami, which is the location mentioned in the input text. This is useful as it indicates where the cardholder is located.
+4. Groq LLM's classification states that there is a critical risk of fraud, which is accurate based on the alert's text. Compared to the HF Sentiment model, Groq LLM's analysis is consistent; compared to the HF Zero-Shot model, the results directly contradict each other.
+5. Groq LLM and HF Sentiment produced consistent results, agreeing upon a negative/critical alert. They disagreed with HF Zero-Shot's analysis that this was a routine transaction.",3/6/2026 16:24
+Loan application submitted with same address as 8 other recent applications — different applicant names,NEGATIVE,0.9936,routine transaction,0.0361,,"HIGH. This indicates a possible identity theft scheme or money laundering attempt, warranting further investigation to verify the legitimacy of the loan application and prevent potential fraud.","1. The sentiment label is negative, and the message indicates suspicious activity; the sentiment model correctly identified the concerning nature of the message.
+2. Zero-Shot classified the record as a routine transaction, which does not make sense.
+3. NER did not extract any entities.
+4. Groq LLM classified the alert as high risk of fraud, which is accurate based on the information. Groq LLM's classification was far more accurate than HF Zero-Shot's, while it matched up with the HF Sentiment model's analysis that the sentiment is negative.
+5. HF Sentiment and Groq LLM agreed that the alert was negative, with Groq LLM stating the alert is high risk. They both disagreed with HF Zero-Shot, which stated this was a routine transaction.",3/6/2026 16:24
+ ATM withdrawal of $200 at branch location — customer's home branch — 2:00 PM Tuesday,NEGATIVE,0.9946,routine transaction,0.0272,,"ROUTINE
+This transaction is a normal withdrawal at the customer's home branch, suggesting a typical banking activity.","1. The sentiment model was inaccurate in labeling the message as negative, since the message is indicative of a normal transaction.
+2. Zero-Shot classified the record as a routine transaction, which is expected and makes sense.
+3. NER did not extract any entities.
+4. Groq LLM classified the alert as routine, which is to be expected based on the normality of the alert. This lines up with HF Zero-Shot's classification, but contrasts with the HF Sentiment model which stated that the alert was negative.
+5. HF Zero-Shot and Groq LLM both agreed this was a routine transaction. They disagreed with HF Sentiment, which claimed the sentiment was negative.",3/6/2026 16:24
