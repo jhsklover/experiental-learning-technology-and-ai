@@ -1,13 +1,20 @@
 # Model Comparison Report — Week 4 
 
 **Name:** Jack Sklover 
+
 **Date:** 03/08/2026
+
 **Capstone Project:** Financial Fraud Detection System
+
 **My Component:** Transaction Ingestion Workflow and Dashboard
 
 ## Test Setup 
-**Input dataset:** 5 [domain] text samples covering: - 2 clearly concerning/high-severity records - 1 ambiguous/edge case record - 2 routine/benign records 
-8 / 14
+
+**Input dataset:** 5 fraud investigation text samples covering: 
+- 2 clearly concerning/high-severity records
+- 1 ambiguous/edge case record
+- 2 routine/benign records
+
 **Models tested:**
 week-04-lab-instructions.md
 1. distilbert-base-uncased-finetuned-sst-2-english (sentiment) 
