@@ -44,8 +44,11 @@ integration in n8n
 
 ## Recommended Models for My Capstone Component 
 **Component:** Transaction Ingestion Workflow
+
 **Primary model:** Groq Llama 3.1 8B — This model is both fast and produces human-like analysis that is both logical and explanatory.
+
 **Secondary model (if applicable):** N/A
+
 **Rejected models and why:**
 - Hugging Face Sentiment: This model does not produce expansive or accurate results, as it is designed to find the sentiment. Positive or negative does not truly encompass the alert's content, making it unsuitable.
 - Hugging Face Zero-Shot: This model was unable to accurately determine whether the alerts were fraudulent transactions or routine transactions. The model only provided one out of five accurate results, meaning that it is unsuitable.
