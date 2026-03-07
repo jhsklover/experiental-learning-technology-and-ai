@@ -48,6 +48,7 @@ most sensible results?]
 ## Failure Cases and Limitations 
 [Describe at least one case where a model gave a wrong or surprising result. 
 What does this tell you about using this model in production?] 
+
 ## Next Steps 
-[What would you test next if you had more time? More records? Different labels? 
-A different model you didn't test this week?] 
+
+Given that the Hugging Face sentiment and zero-shot models did not produce accurate results across all records, those would not be suitable to use for data analysis. I would expand upon this experiment by testing a larger collection of records, with a more expansive group of classifications, since results can fall outside of "fraudulent activity", "routine transaction", and "requires review": there could be options for neutral but leaning toward negative or positive. I think that HF Zero-Shot has potential, but the model used provided inaccurate results; I'd like to replace it with a different model, such as MoritzLaurer/DeBERTa-v3-base-mnli, or roberta-large-mnli.
