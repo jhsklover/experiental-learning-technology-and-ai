@@ -40,7 +40,7 @@ integration in n8n
 
 **Most accurate model overall:** Based on the results, Groq LLM provided the most accurate results. Based on the content of each record, Groq's analysis was reliable for all five of the models. 
 
-**Fastest/most practical:** My experience working with the four models is that HF Sentiment, HF Zero-Shot, and Groq LLM were all significantly faster than HF NER. Groq LLM processed the records incredibly fast and was able to produce accurate results, so it seems to be the most practical. HF Sentiment is fast, but is not very effective, so it is not practical for analysis. HF NER was slow to even sift through five records, so it would be difficult to use at scale. HF Zero-Shot was also quite fast, and could have the potential to be more accurate with more labels.
+**Fastest/most practical:** My experience working with the four models is that HF Sentiment, HF Zero-Shot, and Groq LLM were all significantly faster than HF NER. Groq LLM processed the records incredibly fast and was able to produce accurate results, so it seems to be the most practical. HF Sentiment is fast, but is not very effective, so it is not practical for analysis. HF NER was slow to even sift through five records, so it would be difficult to use at scale. HF Zero-Shot was also quite fast, but did not produce reliable results, making it impractical.
 
 ## Recommended Models for My Capstone Component 
 **Component:** Transaction Ingestion Workflow
@@ -58,4 +58,4 @@ The most jarring result was for record #2, where the input text was "Monthly sal
 
 ## Next Steps 
 
-Given that the Hugging Face sentiment and zero-shot models did not produce accurate results across all records, those would not be suitable to use for data analysis. I would expand upon this experiment by testing a larger collection of records, with a more expansive group of classifications, since results can fall outside of "fraudulent activity", "routine transaction", and "requires review": there could be options for neutral but leaning toward negative or positive. I think that HF Zero-Shot has potential, but the model used provided inaccurate results; I'd like to replace it with a different model, such as MoritzLaurer/DeBERTa-v3-base-mnli, or roberta-large-mnli.
+Given that the Hugging Face Sentiment and Zero-Shot models did not produce accurate results across all records, those would not be suitable to use for data analysis. I would expand upon this experiment by testing a larger collection of records, with a more expansive group of classifications, since results can fall outside of "fraudulent activity", "routine transaction", and "requires review": there could be options for neutral but leaning toward negative or positive. I think that HF Zero-Shot has potential, but the model used provided inaccurate results; I'd like to replace it with a different model, such as MoritzLaurer/DeBERTa-v3-base-mnli, or roberta-large-mnli.
