@@ -21,6 +21,7 @@ week-04-lab-instructions.md
 2. facebook/bart-large-mnli (zero-shot classification) 
 3. dslim/bert-large-NER (named entity recognition) 
 4. Groq Llama 3.1 8B (LLM classification) 
+
 **Evaluation criteria:** label accuracy, confidence score, speed, ease of 
 integration in n8n 
 ## Results Summary 
