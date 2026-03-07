@@ -2,10 +2,10 @@
 "Wire transfer of $47,500 initiated from new device — international destination — account opened 3 days ago",NEGATIVE,0.9812,routine transaction,0.0132,,"CLASSIFICATION: HIGH
 
 Reason: The combination of a wire transfer of a significant amount, use of a new device for online banking, an international destination, and a recently opened account (less than 4 days ago) indicates a heightened risk of unauthorized or fraudulent activity.","1. The sentiment model correctly identified a negative sentiment, as the message points to suspicious activity.
-2. Zero-Shot classified the record as a routine transaction, which does not make sense.
-3. NER did not extract any entities.
-4. Groq's LLM classification identified that the fraud risk is high, which is accurate to what the input text suggests. This is consistent with the Sentiment HF model but contradicts the HF Zero-Shot model.
-5. LLM Groq and HF Sentiment produced consistent results that agree with each other and disagree with HF Zero-Shot.",3/6/2026 16:24
+<br>2. Zero-Shot classified the record as a routine transaction, which does not make sense.
+<br>3. NER did not extract any entities.
+<br>4. Groq's LLM classification identified that the fraud risk is high, which is accurate to what the input text suggests. This is consistent with the Sentiment HF model but contradicts the HF Zero-Shot model.
+<br>5. LLM Groq and HF Sentiment produced consistent results that agree with each other and disagree with HF Zero-Shot.",3/6/2026 16:24
 "Monthly salary deposit of $4,200 processed — expected amount from known employer",NEGATIVE,0.9544,fraudulent activity,0.0018,,"ROUTINE. The transaction amount and employer match the customer's known profile, indicating minimal risk.","1. The message points to routine activity which is actually beneficial to the employee; however, the sentiment model labelled the input text negative which is inaccurate.
 2. Zero-Shot classified the record as a fraudulent transaction, which does not make sense.
 3. NER did not extract any entities.
