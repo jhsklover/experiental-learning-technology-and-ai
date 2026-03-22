@@ -53,8 +53,6 @@ My model is better at precision, as it has a score of 75% compared to the recall
 3. **Fine-Tuned B:** roberta-spam — text classification
 
 ### Results 
-week-05-lab-instructions.md
-2026-03-09
 | Input | Generic Label (Score) | Fine-Tuned A Label (Score) | Fine-Tuned B Label 
 (Score) | Best Model | 
 |-------|-----------------------|-----------------------------|---------------------------|------------| 
