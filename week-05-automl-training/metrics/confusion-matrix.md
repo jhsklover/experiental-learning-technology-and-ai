@@ -1,5 +1,5 @@
-Model Predicted: 
+  Model Predicted: 
+                         PHISHING       LEGITIMATE 
 
-                         FORGED         AUTHENTIC 
-Actual:  PHISHING        TP = 3         FN = 2 
-         LEGITIMATE      FP = 1         TN = 4 
+Actual:  PHISHING        TP = ___       FN = ___ 
+         LEGITIMATE      FP = ___       TN = ___ 
