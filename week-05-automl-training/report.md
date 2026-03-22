@@ -56,11 +56,12 @@ My model is better at precision, as it has a score of 75% compared to the recall
 | Input | Generic Label (Score) | Fine-Tuned A Label (Score) | Fine-Tuned B Label 
 (Score) | Best Model | 
 |-------|-----------------------|-----------------------------|---------------------------|------------| 
-| Record 1 | | | | | 
+| Record 1 | x | | | | 
 | Record 2 | | | | | 
 | Record 3 | | | | | 
 | Record 4 | | | | | 
 | Record 5 | | | | | 
+
 ### Analysis 
 **Generic model strengths:** [When did the generic model perform well?] 
 **Generic model weaknesses:** [When did it fail or give low confidence?] 
