@@ -55,11 +55,11 @@ My model is better at precision, as it has a score of 75% compared to the recall
 ### Results 
 | Input | Generic Label (Score) | Fine-Tuned A Label (Score) | Fine-Tuned B Label (Score) | Best Model | 
 |-------|-----------------------|----------------------------|----------------------------|------------| 
-| 1 | | | | | 
-| 1 | | | | | 
-| 1 | | | | | 
-| 1 | | | | | 
-| 1 | | | | | 
+| Record 1 | Negative (0.9972) | Legitimate (0.5029) | Legitimate (1.0000) | Generic | 
+| Record 2 | Negative (0.9911) | Legitimate (0.5427) | Fraudulent (1.0000) | Fine-Tuned B | 
+| Record 3 | Negative (0.9979) | Fraudulent (0.5601) | Fraudulent (1.0000) | Fine-Tuned B | 
+| Record 4 | Negative (0.7697) | Legitimate (0.6578) | Legitimate (0.9880) | Fine-Tuned B | 
+| Record 5 | Negative (0.9638) | Legitimate (0.6977) | Legitimate (1.0000) | Fine-Tuned B | 
 
 ### Analysis 
 **Generic model strengths:** [When did the generic model perform well?] 
