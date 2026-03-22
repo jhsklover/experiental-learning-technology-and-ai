@@ -1,14 +1,22 @@
 # Week 5: AutoML & No-Code Model Training 
+
 Trained a custom image classifier with Google Teachable Machine and compared 
-generic vs fine-tuned Hugging Face models for the [component name] component 
-of our [capstone project name]. 
-## Custom Model Training- Built a [Phishing/Legitimate] image classifier with Teachable Machine - Achieved ___% accuracy on 10 held-out test images - Precision: ___% | Recall: ___% | F1: ___% 
+generic vs fine-tuned Hugging Face models for the **Transaction Ingestion Workflow** component 
+of our **Financial Fraud Detection System** capstone.
+
+## Custom Model Training
+- Built a **Authentic/Forged** image classifier with Teachable Machine
+- Achieved **70**% accuracy on 10 held-out test images
+- Precision: **75**% | Recall: **60**% | F1: **66.67**%
+
 ## Fine-Tuned Model Comparison 
-Compared 3 models (1 generic + 2 fine-tuned) on 5 test inputs: - Generic: distilbert-sst-2 (sentiment) - Fine-Tuned A: [model name] - Fine-Tuned B: [model name] 
-2026-03-09
+Compared 3 models (1 generic + 2 fine-tuned) on 5 test inputs: 
+- Generic: distilbert-sst-2 (sentiment)
+- Fine-Tuned A: bert-tiny-finetuned-sms-spam-detection (text classification)
+- Fine-Tuned B: roberta-spam (text classification)
+
 ## Finding 
-Recommended [model name] for [component name] because [1 sentence reason]. 
-Fine-tuned models showed [higher/comparable] performance with [more relevant 
-labels / 
-higher confidence / better handling of edge cases]. 
+Recommended **roberta-spam** for **Transaction Ingestion Workflow** because it provided the most accurate analysis of the input texts, correctly identifying if they were legitimate or fraudulent 80% of the time. 
+Fine-tuned models showed **higher** performance with more relevant labels and correct analysis. 
+
 See `report.md` for full analysis.
