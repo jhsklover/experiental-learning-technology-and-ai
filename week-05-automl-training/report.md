@@ -30,22 +30,28 @@
 | 10 | Authentic | Authentic | 0.99 | Yes | 
 
 ### Confusion Matrix 
-|  | Predicted: [Class 1] | Predicted: [Class 2] | 
+|  | Predicted: Forged | Predicted: Authentic | 
 |---|---|---| 
-| **Actual: [Class 1]** | TP = ___ | FN = ___ | 
-| **Actual: [Class 2]** | FP = ___ | TN = ___ | 
-### Calculated Metrics- **Accuracy:** ___% - **Precision:** ___% - **Recall:** ___% - **F1 Score:** ___% 
-2026-03-09
+| **Actual: [Class 1]** | TP = 3 | FN = 2 | 
+| **Actual: [Class 2]** | FP = 1 | TN = 4 | 
+
+
+### Calculated Metrics
+- **Accuracy:** 70%
+- **Precision:** 75%
+- **Recall:** 60%
+- **F1 Score:** 66.67% 
+
 ### Interpretation 
-[2-3 sentences: Is your model better at precision or recall? Which errors did it 
-make? 
-What would improve it?] --- 
+My model is better at precision, as it has a score of 75% compared to the recall score of 60%. The model allowed two fraudulent examples out of five to escape and be misidentified as authentic, which means it is not able to catch concerning alerts at an incredibly reliable rate. In order to improve this, I would train it with even more example images and fine-tune the criteria in which it analyzes the data.
+
+--- 
 ## Part B: Generic vs Fine-Tuned Model Comparison 
 ### Models Tested
 1. **Generic:** distilbert-base-uncased-finetuned-sst-2-english (sentiment) 
-2. **Fine-Tuned A:** [model name] — [what it does] 
-3. **Fine-Tuned B:** [model name] — [what it does] 
-14 / 25
+2. **Fine-Tuned A:** bert-tiny-finetuned-sms-spam-detection/pip — text classification
+3. **Fine-Tuned B:** roberta-spam — text classification
+
 ### Results 
 week-05-lab-instructions.md
 2026-03-09
