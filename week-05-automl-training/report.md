@@ -1,25 +1,34 @@
 # Week 5 Report: AutoML Training & Fine-Tuned Model Evaluation 
 
 **Name:** Jack Sklover
+
 **Date:** 03/22/2026
+
 **Capstone Project:** Financial Fraud Detection System
+
 **My Component:** Transaction Ingestion Workflow
 
 ## Part A: Teachable Machine Training 
-### Training Setup- **Task:** [e.g., Phishing vs Legitimate email screenshot classification] - **Training images per class:** [number] - **Test images per class:** [number] - **Total training time:** [e.g., ~30 seconds] 
+### Training Setup
+- **Task:** Forged vs. Authentic image classification
+- **Training images per class:** 30
+- **Test images per class:** 5
+- **Total training time:** 43 seconds
+ 
 ### Test Results 
 | # | Actual Class | Predicted Class | Confidence | Correct? | 
 |---|--------------|-----------------|------------|----------| 
-| 1 | | | | | 
-| 2 | | | | | 
-| 3 | | | | | 
-| 4 | | | | | 
-| 5 | | | | | 
-| 6 | | | | | 
-| 7 | | | | | 
-| 8 | | | | | 
-| 9 | | | | | 
-| 10 | | | | | 
+| 1 | Forged | Authentic | 0.75 | No | 
+| 2 | Forged | Forged | 1.00 | Yes | 
+| 3 | Forged | Forged | 1.00 | Yes | 
+| 4 | Forged | Authentic | 0.61 | No | 
+| 5 | Forged | Forged | 0.99 | Yes | 
+| 6 | Authentic | Forged | 0.71 | No | 
+| 7 | Authentic | Authentic | 1.00 | Yes | 
+| 8 | Authentic | Authentic | 1.00 | Yes | 
+| 9 | Authentic | Authentic | 1.00 | Yes | 
+| 10 | Authentic | Authentic | 0.99 | Yes | 
+
 ### Confusion Matrix 
 |  | Predicted: [Class 1] | Predicted: [Class 2] | 
 |---|---|---| 
