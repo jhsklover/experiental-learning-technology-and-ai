@@ -53,8 +53,8 @@ My model is better at precision, as it has a score of 75% compared to the recall
 3. **Fine-Tuned B:** roberta-spam — text classification
 
 ### Results 
-| # | Actual Class | Predicted Class | Confidence | Correct? | 
-|---|--------------|-----------------|------------|----------| 
+| Input | Generic Label (Score) | Fine-Tuned A Label (Score) | Fine-Tuned B Label (Score) | Best Model | 
+|-------|-----------------------|----------------------------|----------------------------|------------| 
 | 1 | Forged | Authentic | 0.75 | No | 
 | 2 | Forged | Forged | 1.00 | Yes | 
 | 3 | Forged | Forged | 1.00 | Yes | 
