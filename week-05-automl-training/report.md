@@ -53,14 +53,13 @@ My model is better at precision, as it has a score of 75% compared to the recall
 3. **Fine-Tuned B:** roberta-spam — text classification
 
 ### Results 
-| Input | Generic Label (Score) | Fine-Tuned A Label (Score) | Fine-Tuned B Label 
-(Score) | Best Model | 
-|-------|--------------|-----------------|-----------------|--------| 
-| Record 1 | x | | | | 
-| Record 2 | | | | | 
-| Record 3 | | | | | 
-| Record 4 | | | | | 
-| Record 5 | | | | | 
+| Input | Generic Label (Score) | Fine-Tuned A (Score) | Fine-Tuned B (Score) | Best Model |
+| :--- | :--- | :--- | :--- | :--- |
+| Record 1 | NEGATIVE (0.9972) | Legitimate (0.5029) | Legitimate (1.0000) | Fine-Tuned B |
+| Record 2 | NEGATIVE (0.9911) | Legitimate (0.5427) | Fraudulent (1.0000) | Fine-Tuned B |
+| Record 3 | NEGATIVE (0.9979) | Fraudulent (0.5601) | Fraudulent (1.0000) | Consensus |
+| Record 4 | NEGATIVE (0.7697) | Legitimate (0.6578) | Legitimate (0.9880) | Fine-Tuned B |
+| Record 5 | NEGATIVE (0.9638) | Legitimate (0.6977) | Legitimate (1.0000) | Fine-Tuned B |
 
 ### Analysis 
 **Generic model strengths:** [When did the generic model perform well?] 
