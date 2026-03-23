@@ -11,7 +11,7 @@
 ## Part A: Teachable Machine Training 
 ### Training Setup
 - **Task:** Forged vs. Authentic image classification
-- **Training images per class:** 30
+- **Training images per class:** 26
 - **Test images per class:** 5
 - **Total training time:** 43 seconds
  
