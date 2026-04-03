@@ -1,5 +1,12 @@
 # Week 7: RAG Security Knowledge Assistant — Evaluation Report
-## 1. Setup Summary- **LLM:** [model name used, e.g., llama-3.3-70b-versatile via Groq]- **Embeddings:** [model name, e.g., sentence-transformers/all-MiniLM-L6-v2 via HuggingFace]- **Vector Store:** In-Memory Vector Store- **Documents loaded:** [list your 3–5 documents and approximate page counts]
+
+## 1. Setup Summary
+- **LLM:** llama-3.3-70b-versatile via Groq API
+- **Embeddings:** sentence-transformers/all-MiniLM-L6-v2 via HuggingFace
+- **Vector Store:** In-Memory Vector Store
+- **Documents loaded:** `mitre-account-discovery.txt` (13 pages); `mitre-phishing-for-information.txt` (6 pages); `mitre-user-execution.txt` (28 pages)
+
+
 ## 2. Test Results
 | # | Question | Used Documents? | Quality | Notes |
 |---|----------|----------------|---------|-------|
