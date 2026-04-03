@@ -10,7 +10,7 @@
 ## 2. Test Results
 | # | Question | Used Documents? | Quality | Notes |
 |---|----------|----------------|---------|-------|
-| 1 | How do adversaries access lists of accounts, such as via domain, email, local, and cloud accounts? | Yes/No | Good/Partial/Wrong | [observations] |
+| 1 | How do adversaries access lists of accounts, such as via domain, email, local, and cloud accounts? | Yes | Good | The RAG response was highly accurate; it highlighted all four sub-techniques for account discovery, and outlined specific procedures used to obtain information. The response also included several examples, including Ruler, TA505, and Volt Typhoon. |
 | 2 | What social engineering techniques are used when phishing for information? | | | |
 | 3 | How do adversaries perform spearphishing voice? | | | |
 | 4 | What is the difference between malicious link and malicious file? | | | |
