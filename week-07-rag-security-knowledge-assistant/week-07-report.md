@@ -30,3 +30,5 @@
 - What surprised you about how RAG works?
 - How could you improve this chatbot for real-world use?
 - How might you use RAG in your capstone project
+
+`https://cloud.flowiseai.com/chatbot/7acf3c94-0917-4dc6-a7f2-5f25761df1c0`
