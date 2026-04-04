@@ -27,8 +27,6 @@
 - **Top K change:** Changing Top K to 6 improved the chatbot's recall. In previous answers, the chatbot did not mention the "ClickFix" strategy when asked "How do adversaries deceive users during user execution?". This allowed for more varied information, displaying more tactics and context than in previous answers.
 
 ## 5. Reflection
-- What surprised you about how RAG works?
-- How could you improve this chatbot for real-world use?
-- How might you use RAG in your capstone project
+While doing this lab, I was surprised at the efficiency that RAG works, and the detail of the answers using a given set of information. Within a few seconds of asking questions, I received answers, all of which were accurate based on the documents provided. Given the ease that I created the chatbot with, I didn't expect it to work this well. To improve this for real-world use, I'd need to upload more documents since the chatbot can only operate based on the scope of its documents; whenever I asked questions that were entirely unrelated to the topics at hand, or that were related but not included within the documentation, the chatbot answered that it did not know the answer. I was glad the chatbot did not lie or make up information, but for real-world applications, I'd need to widen the information given to the chatbot so it could answer a plethora of questions on various topics. 
 
 `https://cloud.flowiseai.com/chatbot/7acf3c94-0917-4dc6-a7f2-5f25761df1c0`
