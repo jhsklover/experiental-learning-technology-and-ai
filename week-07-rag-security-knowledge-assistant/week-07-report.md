@@ -22,9 +22,9 @@
 - **Question about technique/topic not uploaded:** When asking the chatbot about what Setuid and Setgid are which relates to the Abuse Elevation Control Mechanism topic, it admitted it did not know.
 
 ## 4. Settings Experiments (if completed)
-- **Temperature change:** [what effect did you observe?]
-- **Chunk size change:** [what effect did you observe?]
-- **Top K change:** [what effect did you observe?]
+- **Temperature change:** Changing the temperature from 0.3 to 0.7 made the answers to the questions broader and more conversational, using language with more of a flow and breaking down the topic into simpler terms. The chatbot still provided accurate answers, but they were less specific.
+- **Chunk size change:** Changing the chunk size from 1000 to 500 made the responses significantly shorter than before, but each response broke down a different piece of information in more detail. The information was still accurate, but also displayed less documents as sources.
+- **Top K change:** Changing Top K to 6 improved the chatbot's recall. In previous answers, the chatbot did not mention the "ClickFix" strategy when asked "How do adversaries deceive users during user execution?". This allowed for more varied information, displaying more tactics and context than in previous answers.
 
 ## 5. Reflection
 - What surprised you about how RAG works?
