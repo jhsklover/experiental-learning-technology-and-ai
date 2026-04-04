@@ -17,8 +17,9 @@
 | 5 | How do adversaries deceive users during user execution? | Yes | Good |  |
 
 ## 3. Edge Case Observations
-- **Unrelated question:** [what happened when you asked something off-topic?]
-- **Topic not in documents:** [did it hallucinate or admit it didn't know?]
+- **Unrelated question:** When I asked the chatbot "what is the weather like today?" it answered "hmm, I'm not sure", meaning that it admitted it had no idea.
+- **Topic not in documents:** The chatbot admitted it didn't know when asked "what are the latest CVEs from 2026?"
+- **Question about technique/topic not uploaded:** When asking the chatbot about what Setuid and Setgid are which relates to the Abuse Elevation Control Mechanism topic, it admitted it did not know.
 
 ## 4. Settings Experiments (if completed)
 - **Temperature change:** [what effect did you observe?]
