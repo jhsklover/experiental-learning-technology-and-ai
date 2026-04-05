@@ -5,6 +5,7 @@
 - **Embeddings:** sentence-transformers/all-MiniLM-L6-v2 via HuggingFace
 - **Vector Store:** In-Memory Vector Store
 - **Documents loaded:** `mitre-account-discovery.txt` (13 pages); `mitre-phishing-for-information.txt` (6 pages); `mitre-user-execution.txt` (28 pages)
+- **Flowise Chatbot Link:** `https://cloud.flowiseai.com/chatbot/7acf3c94-0917-4dc6-a7f2-5f25761df1c0`
 
 
 ## 2. Test Results
@@ -28,5 +29,3 @@
 
 ## 5. Reflection
 While doing this lab, I was surprised at the efficiency that RAG works, and the detail of the answers using a given set of information. Within a few seconds of asking questions, I received answers, all of which were accurate based on the documents provided. Given the ease that I created the chatbot with, I didn't expect it to work this well. To improve this for real-world use, I'd need to upload more documents since the chatbot can only operate based on the scope of its documents; whenever I asked questions that were entirely unrelated to the topics at hand, or that were related but not included within the documentation, the chatbot answered that it did not know the answer. I was glad the chatbot did not lie or make up information, but for real-world applications, I'd need to widen the information given to the chatbot so it could answer a plethora of questions on various topics. For my financial fraud analysis capstone project, I could use the RAG assistant to provide information about financial fraud strategies and signals, and to filter out irrelevant alerts. The RAG assistant may not be directly relevant to my capstone, but I thoroughly enjoyed this lab, so I'd need to brainstorm a way to fit this in: since I'm working with transaction ingestion, I could use the chatbot to filter the dataset.
-
-`https://cloud.flowiseai.com/chatbot/7acf3c94-0917-4dc6-a7f2-5f25761df1c0`
