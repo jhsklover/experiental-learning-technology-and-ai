@@ -15,7 +15,7 @@
 | 2 | What social engineering techniques are used when phishing for information? | Yes | Good | The RAG response accurately highlighted the different social engineering techniques that are used during phishing, like impersonation, and senses of urgency. |
 | 3 | How do adversaries perform spearphishing voice? | Yes | Good | The information presented was accurate, but the results looked nearly identical to that of the previous question; that is due to the social engineering techniques being applicable as the answer for this question as well. |
 | 4 | What is the difference between malicious link and malicious file? | Yes | Good | The response correctly distinguished the differences between malicious link and malicious file, with multi-sentence explanations on both. It explained that the malicious link is what gets sent and clicked on, while the malicious file contains malware. |
-| 5 | How do adversaries deceive users during user execution? | Yes | Good |  |
+| 5 | How do adversaries deceive users during user execution? | Yes | Good | The response was accurate and explained all of the different ways that adversaries may deceive users. |
 
 ## 3. Edge Case Observations
 - **Unrelated question:** When I asked the chatbot "what is the weather like today?" it answered "hmm, I'm not sure", meaning that it admitted it had no idea.
