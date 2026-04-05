@@ -1,0 +1,927 @@
+An adversary may rely upon a user clicking a malicious link in order to gain execution. Users may be subjected to social engineering to get them to click on a link that will lead to code execution. This user action will typically be observed as follow-on behavior from Spearphishing Link. Clicking on a link may also lead to other execution techniques such as exploitation of a browser or application vulnerability via Exploitation for Client Execution. Links may also lead users to download files that require execution via Malicious File.
+
+ID: T1204.001
+Sub-technique of:  T1204
+ⓘ
+Tactic: Execution
+ⓘ
+Platforms: Linux, Windows, macOS
+Version: 1.2
+Created: 11 March 2020
+Last Modified: 24 October 2025
+Version Permalink
+Procedure Examples
+ID	Name	Description
+S0584	AppleJeus	
+AppleJeus's spearphishing links required user interaction to navigate to the malicious website.[1]
+
+G0007	APT28	
+APT28 has tricked unwitting recipients into clicking on malicious hyperlinks within emails crafted to resemble trustworthy senders.[2][3]
+
+G0016	APT29	
+APT29 has used various forms of spearphishing attempting to get a user to click on a malicious link.[4][5]
+
+G0022	APT3	
+APT3 has lured victims into clicking malicious links delivered through spearphishing.[6]
+
+G0050	APT32	
+APT32 has lured targets to download a Cobalt Strike beacon by including a malicious link within spearphishing emails.[7][8][9]
+
+G0064	APT33	
+APT33 has lured users to click links to malicious HTML applications delivered via spearphishing emails.[10][11]
+
+G0082	APT38	
+APT38 has used links to execute a malicious Visual Basic script.[12]
+
+G0087	APT39	
+APT39 has sent spearphishing emails in an attempt to lure users to click on a malicious link.[13][14]
+
+S0475	BackConfig	
+BackConfig has compromised victims via links to URLs hosting malicious content.[15]
+
+S0534	Bazar	
+Bazar can gain execution after a user clicks on a malicious link to decoy landing pages hosted on Google Docs.[16][17][18]
+
+G0098	BlackTech	
+BlackTech has used e-mails with malicious links to lure victims into installing malware.[19]
+
+S1039	Bumblebee	
+Bumblebee has relied upon a user downloading a file from a OneDrive link for execution.[20][21]
+
+C0011	C0011	
+During C0011, Transparent Tribe relied on student targets to click on a malicious link sent via email.[22]
+
+C0021	C0021	
+During C0021, the threat actors lured users into clicking a malicious link which led to the download of a ZIP archive containing a malicious .LNK file.[23]
+
+G0080	Cobalt Group	
+Cobalt Group has sent emails containing malicious links that require users to execute a file or macro to infect the victim machine.[24][25][26]
+
+G0142	Confucius	
+Confucius has lured victims into clicking on a malicious link sent through spearphishing.[27]
+
+G1052	Contagious Interview	
+Contagious Interview has lured victims to click on a malicious link that led to download of a malicious payload.[28] Contagious Interview has also leveraged links to malicious payloads on social media and code repositories.[28]
+
+G1034	Daggerfly	
+Daggerfly has used strategic website compromise to deliver a malicious link requiring user interaction.[29]
+
+G1006	Earth Lusca	
+Earth Lusca has sent spearphishing emails that required the user to click on a malicious link and subsequently open a decoy document with a malicious loader.[30]
+
+G0066	Elderwood	
+Elderwood has leveraged multiple types of spearphishing in order to attempt to get a user to open links.[31][32]
+
+S0367	Emotet	
+Emotet has relied upon users clicking on a malicious link delivered through spearphishing.[33][34]
+
+G0120	Evilnum	
+Evilnum has sent spearphishing emails designed to trick the recipient into opening malicious shortcut links which downloads a .LNK file.[35]
+
+G1011	EXOTIC LILY	
+EXOTIC LILY has used malicious links to lure users into executing malicious payloads.[36]
+
+G0085	FIN4	
+FIN4 has lured victims to click malicious links delivered via spearphishing emails (often sent from compromised accounts).[37][38]
+
+G0046	FIN7	
+FIN7 has used malicious links to lure victims into downloading malware.[39]
+
+G0061	FIN8	
+FIN8 has used emails with malicious links to lure victims into installing malware.[40][41][42]
+
+G0047	Gamaredon Group	
+Gamaredon Group has attempted to get users to click on a link pointing to a malicious HTML file leading to follow-on malicious content.[43][44]
+
+S1138	Gootloader	
+Gootloader has been executed through malicious links presented to users as internet search results.[45][46]
+
+S0531	Grandoreiro	
+Grandoreiro has used malicious links to gain execution on victim machines.[47][48]
+
+S0561	GuLoader	
+GuLoader has relied upon users clicking on links to malicious documents.[49]
+
+S0499	Hancitor	
+Hancitor has relied upon users clicking on a malicious link delivered through phishing.[50]
+
+S0528	Javali	
+Javali has achieved execution through victims clicking links to malicious websites.[51]
+
+S0585	Kerrdown	
+Kerrdown has gained execution through victims opening malicious links.[9]
+
+G0094	Kimsuky	
+Kimsuky has lured victims into clicking malicious links.[52]
+
+S0669	KOCTOPUS	
+KOCTOPUS has relied on victims clicking on a malicious link delivered via email.[53]
+
+S1160	Latrodectus	
+Latrodectus has been executed through malicious links distributed in email campaigns.[54][55]
+
+G0140	LazyScripter	
+LazyScripter has relied upon users clicking on links to malicious files.[53]
+
+G0065	Leviathan	
+Leviathan has sent spearphishing email links attempting to get a user to click.[56][57]
+
+G1014	LuminousMoth	
+LuminousMoth has lured victims into clicking malicious Dropbox download links delivered through spearphishing.[58]
+
+G0095	Machete	
+Machete has has relied on users opening malicious links delivered through spearphishing to execute malware.[59][60][61]
+
+G0059	Magic Hound	
+Magic Hound has attempted to lure victims into opening malicious links embedded in emails.[62][63]
+
+S0530	Melcoz	
+Melcoz has gained execution through victims opening malicious links.[51]
+
+G0103	Mofang	
+Mofang's spearphishing emails required a user to click the link to connect to a compromised website.[64]
+
+G0021	Molerats	
+Molerats has sent malicious links via email trick users into opening a RAR archive and running an executable.[65][66]
+
+G0069	MuddyWater	
+MuddyWater has distributed URLs in phishing e-mails that link to lure documents.[67][68][69]
+
+G0129	Mustang Panda	
+Mustang Panda has sent malicious links including links directing victims to a Google Drive folder.[70][71][72][73][74][75] Mustang Panda has also utilized webpages with Javascript code that downloads malicious payloads to the victim device.[76]
+
+G1020	Mustard Tempest	
+Mustard Tempest has lured users into downloading malware through malicious links in fake advertisements and spearphishing emails.[77][78]
+
+S0198	NETWIRE	
+NETWIRE has been executed through convincing victims into clicking malicious links.[79][49]
+
+C0002	Night Dragon	
+During Night Dragon, threat actors enticed users to click on links in spearphishing emails to download malware.[80]
+
+S0644	ObliqueRAT	
+ObliqueRAT has gained execution on targeted systems through luring users to click on links to malicious URLs.[81][82]
+
+G0049	OilRig	
+OilRig has delivered malicious links to achieve execution on the target system.[83][84][85][86]
+
+C0022	Operation Dream Job	
+During Operation Dream Job, Lazarus Group lured users into executing a malicious link to disclose private account information or provide initial access.[87][88]
+
+C0016	Operation Dust Storm	
+During Operation Dust Storm, the threat actors relied on a victim clicking on a malicious link sent via email.[89]
+
+C0005	Operation Spalax	
+During Operation Spalax, the threat actors relied on a victim to click on a malicious link distributed via phishing emails.[90]
+
+S1017	OutSteel	
+OutSteel has relied on a user to click a malicious link within a spearphishing email.[91]
+
+G0040	Patchwork	
+Patchwork has used spearphishing with links to try to get users to click, download and open malicious files.[92][93][94][15]
+
+S0435	PLEAD	
+PLEAD has been executed via malicious links in e-mails.[19]
+
+S0453	Pony	
+Pony has attempted to lure targets into clicking links in spoofed emails from legitimate banks.[95]
+
+S0650	QakBot	
+QakBot has gained execution through users opening malicious links.[96][97][98][99][100][101][102]
+
+S1242	Qilin	
+Qilin has been executed by luring victims into clicking links in spearphishing emails.[103][104]
+
+G1039	RedCurl	
+RedCurl has used malicious links to infect the victim machines.[105][106]
+
+C0047	RedDelta Modified PlugX Infection Chain Operations	
+Mustang Panda distributed hyperlinks that would result in an MSC file running a PowerShell command to download and install a remotely-hosted MSI file during RedDelta Modified PlugX Infection Chain Operations.[107]
+
+G1031	Saint Bear	
+Saint Bear has, in addition to email-based phishing attachments, used malicious websites masquerading as legitimate entities to host links to malicious files for user execution.[91][108]
+
+S1018	Saint Bot	
+Saint Bot has relied on users to click on a malicious link delivered via a spearphishing.[91]
+
+G0034	Sandworm Team	
+Sandworm Team has tricked unwitting recipients into clicking on malicious hyperlinks within emails crafted to resemble trustworthy senders.[109]
+
+G0121	Sidewinder	
+Sidewinder has lured targets to click on malicious links to gain execution in the target environment.[110][111][112][113]
+
+S0649	SMOKEDHAM	
+SMOKEDHAM has relied upon users clicking on a malicious link delivered through phishing.[114]
+
+S1086	Snip3	
+Snip3 has been executed through luring victims into clicking malicious links.[115]
+
+S1124	SocGholish	
+SocGholish has lured victims into interacting with malicious links on compromised websites for execution.[78]
+
+S0646	SpicyOmelette	
+SpicyOmelette has been executed through malicious links within spearphishing emails.[26]
+
+S1030	Squirrelwaffle	
+Squirrelwaffle has relied on victims to click on a malicious link send via phishing campaigns.[116]
+
+G1018	TA2541	
+TA2541 has used malicious links to cloud and web services to gain execution on victim machines.[117][79]
+
+G0092	TA505	
+TA505 has used lures to get users to click links in emails and attachments. For example, TA505 makes their malware look like legitimate Microsoft Word documents, .pdf and/or .lnk files. [118][119][120][121][122][123][124][125]
+
+G1037	TA577	
+TA577 has lured users into executing malicious JavaScript files by sending malicious links via email.[54]
+
+G1038	TA578	
+TA578 has placed malicious links in contact forms on victim sites, often spoofing a copyright complaint, to redirect users to malicious file downloads.[54]
+
+G0134	Transparent Tribe	
+Transparent Tribe has directed users to open URLs hosting malicious content.[81][82]
+
+S0436	TSCookie	
+TSCookie has been executed via malicious links embedded in e-mails spoofing the Ministries of Education, Culture, Sports, Science and Technology of Japan.[126]
+
+G0010	Turla	
+Turla has used spearphishing via a link to get users to download and run their malware.[127]
+
+C0037	Water Curupira Pikabot Distribution	
+Water Curupira Pikabot Distribution distributed a PDF attachment containing a malicious link to a Pikabot installer.[128]
+
+G0112	Windshift	
+Windshift has used links embedded in e-mails to lure victims into executing malicious code.[129]
+
+G1035	Winter Vivern	
+Winter Vivern has mimicked legitimate government-related domains to deliver malicious webpages containing links to documents or other content for user execution.[130][131]
+
+G0102	Wizard Spider	
+Wizard Spider has lured victims into clicking a malicious link delivered through spearphishing.[132]
+
+G0128	ZIRCONIUM	
+ZIRCONIUM has used malicious links in e-mails to lure victims into downloading malware.[133][134]
+
+An adversary may rely upon a user opening a malicious file in order to gain execution. Users may be subjected to social engineering to get them to open a file that will lead to code execution. This user action will typically be observed as follow-on behavior from Spearphishing Attachment. Adversaries may use several types of files that require a user to execute them, including .doc, .pdf, .xls, .rtf, .scr, .exe, .lnk, .pif, .cpl, .reg, and .iso.[1]
+
+Adversaries may employ various forms of Masquerading and Obfuscated Files or Information to increase the likelihood that a user will open and successfully execute a malicious file. These methods may include using a familiar naming convention and/or password protecting the file and supplying instructions to a user on how to open it.[2]
+
+While Malicious File frequently occurs shortly after Initial Access it may occur at other phases of an intrusion, such as when an adversary places a file in a shared directory or on a user's desktop hoping that a user will click on it. This activity may also be seen shortly after Internal Spearphishing.
+
+ID: T1204.002
+Sub-technique of:  T1204
+ⓘ
+Tactic: Execution
+ⓘ
+Platforms: Linux, Windows, macOS
+Contributors: TruKno
+Version: 1.6
+Created: 11 March 2020
+Last Modified: 24 October 2025
+Version Permalink
+Procedure Examples
+ID	Name	Description
+C0028	2015 Ukraine Electric Power Attack	
+During the 2015 Ukraine Electric Power Attack, Sandworm Team leveraged Microsoft Office attachments which contained malicious macros that were automatically executed once the user permitted them. [3]
+
+G0018	admin@338	
+admin@338 has attempted to get victims to launch malicious Microsoft Word attachments delivered via spearphishing emails.[4]
+
+S0331	Agent Tesla	
+Agent Tesla has been executed through malicious e-mail attachments [5]
+
+G0130	Ajax Security Team	
+Ajax Security Team has lured victims into executing malicious files.[6]
+
+G0138	Andariel	
+Andariel has attempted to lure victims into enabling malicious macros within email attachments.[7]
+
+G1007	Aoqin Dragon	
+Aoqin Dragon has lured victims into opening weaponized documents, fake external drives, and fake antivirus to execute malicious payloads.[8]
+
+S0584	AppleJeus	
+AppleJeus has required user execution of a malicious MSI installer.[9]
+
+S0622	AppleSeed	
+AppleSeed can achieve execution through users running malicious file attachments distributed via email.[10]
+
+G0099	APT-C-36	
+APT-C-36 has prompted victims to accept macros in order to execute the subsequent payload.[11]
+
+G0005	APT12	
+APT12 has attempted to get victims to open malicious Microsoft Word and PDF attachment sent via spearphishing.[12][13]
+
+G0073	APT19	
+APT19 attempted to get users to launch malicious attachments delivered via spearphishing emails.[14]
+
+G0007	APT28	
+APT28 attempted to get users to click on Microsoft Office attachments containing malicious macro scripts.[15][16][17]
+
+G0016	APT29	
+APT29 has used various forms of spearphishing attempting to get a user to open attachments, including, but not limited to, malicious Microsoft Word documents, .pdf, and .lnk files. [18][19][20]
+
+G0013	APT30	
+APT30 has relied on users to execute malicious file attachments delivered via spearphishing emails.[21]
+
+G0050	APT32	
+APT32 has attempted to lure users to execute a malicious dropper delivered via a spearphishing attachment.[22][23][24][25][26]
+
+G0064	APT33	
+APT33 has used malicious e-mail attachments to lure victims into executing malware.[27]
+
+G0067	APT37	
+APT37 has sent spearphishing attachments attempting to get a user to open them.[28]
+
+G0082	APT38	
+APT38 has attempted to lure victims into enabling malicious macros within email attachments.[29] Additionally, APT38 has used malicious Word documents and shortcut files.[30]
+
+G0087	APT39	
+APT39 has sent spearphishing emails in an attempt to lure users to click on a malicious attachment.[31][32][33][34]
+
+S0373	Astaroth	
+Astaroth has used malicious files including VBS, LNK, and HTML for execution.[35]
+
+S0606	Bad Rabbit	
+Bad Rabbit has been executed through user installation of an executable disguised as a flash installer.[36][37]
+
+S0642	BADFLICK	
+BADFLICK has relied upon users clicking on a malicious attachment delivered through spearphishing.[38]
+
+S0234	Bandook	
+Bandook has used lure documents to convince the user to enable macros.[39]
+
+S1246	BeaverTail	
+BeaverTail has been executed through lures involving malicious JavaScript projects or trojanized remote conferencing software such as MicroTalk or FreeConference.[40][41] BeaverTail has also been executed through macOS and Windows installers disguised as chat applications.[42][43]
+
+S0268	Bisonal	
+Bisonal has relied on users to execute malicious file attachments delivered via spearphishing emails.[44]
+
+G1002	BITTER	
+BITTER has attempted to lure victims into opening malicious attachments delivered via spearphishing.[45][46]
+
+S1070	Black Basta	
+Black Basta has been downloaded and executed from malicious Excel files.[47][48]
+
+G0098	BlackTech	
+BlackTech has used e-mails with malicious documents to lure victims into installing malware.[49][50]
+
+S0520	BLINDINGCAN	
+BLINDINGCAN has lured victims into executing malicious macros embedded within Microsoft Office documents.[51]
+
+S0635	BoomBox	
+BoomBox has gained execution through user interaction with a malicious file.[52]
+
+G0060	BRONZE BUTLER	
+BRONZE BUTLER has attempted to get users to launch malicious Microsoft Word attachments delivered via spearphishing emails.[53][54]
+
+S1063	Brute Ratel C4	
+Brute Ratel C4 has gained execution through users opening malicious documents.[55]
+
+S1039	Bumblebee	
+Bumblebee has relied upon a user opening an ISO file to enable execution of malicious shortcut files and DLLs.[56][57][58][59]
+
+S0482	Bundlore	
+Bundlore has attempted to get users to execute a malicious .app file that looks like a Flash Player update.[60]
+
+C0011	C0011	
+During C0011, Transparent Tribe relied on a student target to open a malicious document delivered via email.[61]
+
+C0015	C0015	
+During C0015, the threat actors relied on users to enable macros within a malicious Microsoft Word document.[62]
+
+S0348	Cardinal RAT	
+Cardinal RAT lures victims into executing malicious macros embedded within Microsoft Excel documents.[63]
+
+S0465	CARROTBALL	
+CARROTBALL has been executed through users being lured into opening malicious e-mail attachments.[64]
+
+S0631	Chaes	
+Chaes requires the user to click on the malicious Word document to execute the next part of the attack.[65]
+
+S1236	CLAIMLOADER	
+CLAIMLOADER has used tailored decoy documents as part of the installation routine to entice users to open attachments.[66]
+
+S0660	Clambling	
+Clambling has gained execution through luring victims into opening malicious files.[67]
+
+G0080	Cobalt Group	
+Cobalt Group has sent emails containing malicious attachments that require users to execute a file or macro to infect the victim machine.[68][69]
+
+G0142	Confucius	
+Confucius has lured victims to execute malicious attachments included in crafted spearphishing emails related to current topics.[70]
+
+G1052	Contagious Interview	
+Contagious Interview has distributed malicious files requiring direct victim interaction to execute through the guise of a code test.[71][72]
+
+S0527	CSPY Downloader	
+CSPY Downloader has been delivered via malicious documents with embedded macros.[73]
+
+G1012	CURIUM	
+CURIUM has lured users into opening malicious files delivered via social media.[74]
+
+S1014	DanBot	
+DanBot has relied on victims' opening a malicious file for initial execution.[75][76]
+
+G0070	Dark Caracal	
+Dark Caracal makes their malware look like Flash Player, Office, or PDF documents in order to entice a user to click on it.[77]
+
+S1111	DarkGate	
+DarkGate initial infection payloads can masquerade as pirated media content requiring user interaction for code execution.[78] DarkGate is distributed through phishing links to VBS or MSI objects requiring user interaction for execution.[79]
+
+G0012	Darkhotel	
+Darkhotel has sent spearphishing emails in an attempt to lure users into clicking on a malicious attachments.[80][81]
+
+G0079	DarkHydrus	
+DarkHydrus has sent malware that required users to hit the enable button in Microsoft Excel to allow an .iqy file to be downloaded.[82][83]
+
+S1066	DarkTortilla	
+DarkTortilla has relied on a user to open a malicious document or archived file delivered via email for initial execution.[84]
+
+S1088	Disco	
+Disco has been executed through inducing user interaction with malicious .zip and .msi files.[85]
+
+S1021	DnsSystem	
+DnsSystem has lured victims into opening macro-enabled Word documents for execution.[86]
+
+G0035	Dragonfly	
+Dragonfly has used various forms of spearphishing in attempts to get users to open malicious attachments.[87]
+
+S0384	Dridex	
+Dridex has relied upon users clicking on a malicious attachment delivered through spearphishing.[88]
+
+G1006	Earth Lusca	
+Earth Lusca required users to click on a malicious file for the loader to activate.[89]
+
+G0066	Elderwood	
+Elderwood has leveraged multiple types of spearphishing in order to attempt to get a user to open attachments.[90][91]
+
+S0367	Emotet	
+Emotet has relied upon users clicking on a malicious attachment delivered through spearphishing.[92][93][94]
+
+S0634	EnvyScout	
+EnvyScout has been executed through malicious files attached to e-mails.[52]
+
+G1011	EXOTIC LILY	
+EXOTIC LILY has gained execution through victims clicking on malicious LNK files contained within ISO files, which can execute hidden DLLs within the ISO.[95][56]
+
+G0137	Ferocious Kitten	
+Ferocious Kitten has attempted to convince victims to enable malicious content within a spearphishing email by including an odd decoy message.[96]
+
+G0085	FIN4	
+FIN4 has lured victims to launch malicious attachments delivered via spearphishing emails (often sent from compromised accounts).[97][98]
+
+G0037	FIN6	
+FIN6 has used malicious documents to lure victims into allowing execution of PowerShell scripts.[99]
+
+G0046	FIN7	
+FIN7 lured victims to double-click on images in the attachments they sent which would then execute the hidden LNK file.[100][101][102] Additionally, FIN7 has used malicious Microsoft Word and Excel files and Leo VBS to distribute an updated version of JSS Loader and to distribute the Harpy backdoor.[103]
+
+G0061	FIN8	
+FIN8 has used malicious e-mail attachments to lure victims into executing malware.[104][105][106]
+
+S0696	Flagpro	
+Flagpro has relied on users clicking a malicious attachment delivered through spearphishing.[50]
+
+C0001	Frankenstein	
+During Frankenstein, the threat actors relied on a victim to enable macros within a malicious Microsoft Word document likely sent via email.[107]
+
+G0084	Gallmaker	
+Gallmaker sent victims a lure document with a warning that asked victims to "enable content" for execution.[108]
+
+G0047	Gamaredon Group	
+Gamaredon Group has attempted to get users to click on Office attachments with malicious macros embedded.[109][110][111][112][113][114][115][116] Gamaredon Group has also attempted to get users to click on thematically named files.[117]
+
+G0078	Gorgon Group	
+Gorgon Group attempted to get users to launch malicious Microsoft Office attachments delivered via spearphishing emails.[118]
+
+S0531	Grandoreiro	
+Grandoreiro has infected victims via malicious attachments.[119]
+
+S0561	GuLoader	
+The GuLoader executable has been retrieved via embedded macros in malicious Word documents.[120]
+
+S0499	Hancitor	
+Hancitor has used malicious Microsoft Word documents, sent via email, which prompted the victim to enable macros.[121]
+
+G1001	HEXANE	
+HEXANE has relied on victim's executing malicious file attachments delivered via email or embedded within actor-controlled websites to deliver malware.[75][122][76][86]
+
+S1027	Heyoka Backdoor	
+Heyoka Backdoor has been spread through malicious document lures.[8]
+
+G0126	Higaisa	
+Higaisa used malicious e-mail attachments to lure victims into executing LNK files.[123][124]
+
+S1230	HIUPAN	
+HIUPAN has lured victims into executing malicious files from USBs including the use of files such as USBconfig.exe.[66][125]
+
+S0483	IcedID	
+IcedID has been executed through Word and Excel files with malicious embedded macros and through ISO and LNK files that execute the malicious DLL.[126][127][128]
+
+G0100	Inception	
+Inception lured victims into clicking malicious files for machine reconnaissance and to execute malware.[129][130][131][132]
+
+G0136	IndigoZebra	
+IndigoZebra sent spearphishing emails containing malicious attachments that urged recipients to review modifications in the file which would trigger the attack.[133]
+
+G0119	Indrik Spider	
+Indrik Spider has attempted to get users to click on a malicious zipped file.[134]
+
+S0260	InvisiMole	
+InvisiMole can deliver trojanized versions of software and documents, relying on user execution.[135]
+
+S0528	Javali	
+Javali has achieved execution through victims opening malicious attachments, including MSI files with embedded VBScript.[35]
+
+S0389	JCry	
+JCry has achieved execution by luring users to click on a file that appeared to be an Adobe Flash Player update installer. [136]
+
+S0648	JSS Loader	
+JSS Loader has been executed through malicious attachments contained in spearphishing emails.[101]
+
+S0585	Kerrdown	
+Kerrdown has gained execution through victims opening malicious files.[26][137]
+
+S0526	KGH_SPY	
+KGH_SPY has been spread through Word documents containing malicious macros.[73]
+
+G0094	Kimsuky	
+Kimsuky has attempted to lure victims into opening malicious e-mail attachments.[138][139][140][73][10][141] Kimsuky has also lured victims with tailored filenames and fake extensions that entice victims to open LNK files.[142]
+
+S0669	KOCTOPUS	
+KOCTOPUS has relied on victims clicking a malicious document for execution.[143]
+
+S0356	KONNI	
+KONNI has relied on a victim to enable malicious macros within an attachment delivered via email.[144]
+
+S1075	KOPILUWAK	
+KOPILUWAK has gained execution through malicious attachments.[145]
+
+S1160	Latrodectus	
+Latrodectus has lured users into opening malicious email attachments for execution.[146]
+
+G0032	Lazarus Group	
+Lazarus Group has attempted to get users to launch a malicious Microsoft Word attachment delivered via a spearphishing email.[147][148][149][150]
+
+G0140	LazyScripter	
+LazyScripter has lured users to open malicious email attachments.[143]
+
+G0065	Leviathan	
+Leviathan has sent spearphishing attachments attempting to get a user to click.[151][152]
+
+S0447	Lokibot	
+Lokibot has tricked recipients into enabling malicious macros by getting victims to click "enable content" in email attachments.[153][154]
+
+S1213	Lumma Stealer	
+Lumma Stealer has gained initial execution through victims opening malicious executable files embedded in zip archives, and MSI files within RAR files.[155]
+
+S1142	LunarMail	
+LunarMail has been installed through a malicious macro in a Microsoft Word document.[156]
+
+G0095	Machete	
+Machete has relied on users opening malicious attachments delivered through spearphishing to execute malware.[157][158][159][160]
+
+G0059	Magic Hound	
+Magic Hound has attempted to lure victims into opening malicious email attachments.[161]
+
+G1026	Malteiro	
+Malteiro has relied on users to execute .zip file attachments containing malicious URLs.[162]
+
+S1169	Mango	
+Mango has been executed through a Microsoft Word document with a malicious macro.[163]
+
+G0045	menuPass	
+menuPass has attempted to get victims to open malicious files such as Windows Shortcuts (.lnk) and/or Microsoft Office documents, sent via email as part of spearphishing campaigns.[164][165][166][167][168]
+
+S0455	Metamorfo	
+Metamorfo requires the user to double-click the executable to run the malicious HTA file or to download a malicious installer.[169][170]
+
+S1122	Mispadu	
+Mispadu has relied on users to execute malicious files in order to gain execution on victim machines.[171][172][162]
+
+G0103	Mofang	
+Mofang's malicious spearphishing attachments required a user to open the file after receiving.[173]
+
+G0021	Molerats	
+Molerats has sent malicious files via email that tricked users into clicking Enable Content to run an embedded macro and to download malicious archives.[174][175][176]
+
+S1026	Mongall	
+Mongall has relied on a user opening a malicious document for execution.[8]
+
+G1036	Moonstone Sleet	
+Moonstone Sleet relied on users interacting with malicious files, such as a trojanized PuTTY installer, for initial execution.[177]
+
+G0069	MuddyWater	
+MuddyWater has attempted to get users to open malicious PDF attachment and to enable macros and launch malicious Microsoft Word documents delivered via spearphishing emails.[178][179][180][181][182][183][184][185][186][187][188]
+
+G0129	Mustang Panda	
+Mustang Panda has sent malicious files requiring direct victim interaction to execute.[189][190][191][66][192][193][194][195][196][197] Mustang Panda has also leveraged executable files that display decoy documents to the victim to provide a resemblance of legitimacy with customized themes related to the victim.[198][199][200][201][125][202][203][204][205][206][207]
+
+G0019	Naikon	
+Naikon has convinced victims to open malicious attachments to execute malware.[208]
+
+S0637	NativeZone	
+NativeZone can display an RTF document to the user to enable execution of Cobalt Strike stage shellcode.[52]
+
+S0198	NETWIRE	
+NETWIRE has been executed through luring victims into opening malicious documents.[209][120][210]
+
+S1100	Ninja	
+Ninja has gained execution through victims opening malicious executable files embedded in zip archives.[211]
+
+G0133	Nomadic Octopus	
+Nomadic Octopus as attempted to lure victims into clicking on malicious attachments within spearphishing emails.[212][213]
+
+S0340	Octopus	
+Octopus has relied upon users clicking on a malicious attachment delivered through spearphishing.[213]
+
+G0049	OilRig	
+OilRig has delivered macro-enabled documents that required targets to click the "enable content" button to execute the payload on the system.[214][215][216][217][218]
+
+C0022	Operation Dream Job	
+During Operation Dream Job, Lazarus Group lured victims into executing malicious documents that contained "dream job" descriptions from defense, aerospace, and other sectors.[219][220]
+
+C0016	Operation Dust Storm	
+During Operation Dust Storm, the threat actors relied on potential victims to open a malicious Microsoft Word document sent via email.[221]
+
+C0006	Operation Honeybee	
+During Operation Honeybee, threat actors relied on a victim to enable macros within a malicious Word document.[222]
+
+C0013	Operation Sharpshooter	
+During Operation Sharpshooter, the threat actors relied on victims executing malicious Microsoft Word or PDF files.[223]
+
+C0005	Operation Spalax	
+During Operation Spalax, the threat actors relied on a victim to open a PDF document and click on an embedded malicious link to download malware.[224]
+
+S0402	OSX/Shlayer	
+OSX/Shlayer has relied on users mounting and executing a malicious DMG file.[225][226]
+
+S1017	OutSteel	
+OutSteel has relied on a user to execute a malicious attachment delivered via spearphishing.[227]
+
+G0040	Patchwork	
+Patchwork embedded a malicious macro in a Word document and lured the victim to click on an icon to execute the malware.[228][229]
+
+G0068	PLATINUM	
+PLATINUM has attempted to get users to open malicious files by sending spearphishing emails with attachments to victims.[230]
+
+S0435	PLEAD	
+PLEAD has been executed via malicious e-mail attachments.[49]
+
+S0013	PlugX	
+PlugX has leveraged an initial executable disguised as a legitimate document to trick the target into opening it.[199][201]
+
+S0428	PoetRAT	
+PoetRAT has used spearphishing attachments to infect victims.[231]
+
+S0453	Pony	
+Pony has attempted to lure targets into downloading an attached executable (ZIP, RAR, or CAB archives) or document (PDF or other MS Office format).[232]
+
+G0056	PROMETHIUM	
+PROMETHIUM has attempted to get users to execute compromised installation files for legitimate software including compression applications, security software, browsers, file recovery applications, and other tools and utilities.[233][234]
+
+S0650	QakBot	
+QakBot has gained execution through users opening malicious attachments.[235][236][237][238][239][240][241][242][243][244]
+
+S1242	Qilin	
+Qilin has been delivered to victims through spearphishing emails with malicious attachments.[245]
+
+S0458	Ramsay	
+Ramsay has been executed through malicious e-mail attachments.[246]
+
+G0075	Rancor	
+Rancor attempted to get users to click on an embedded macro within a Microsoft Office Excel document to launch their malware.[247]
+
+G1039	RedCurl	
+RedCurl has used malicious files to infect the victim machines.[248][249][250]
+
+C0047	RedDelta Modified PlugX Infection Chain Operations	
+Mustang Panda distributed malicious LNK objects for user execution during RedDelta Modified PlugX Infection Chain Operations.[251]
+
+S1240	RedLine Stealer	
+RedLine Stealer malware has been executed through the download of malicious files.[252][253][254] RedLine Stealer has also lured users to install malware with an Install Wizard interface.[255]
+
+S0496	REvil	
+REvil has been executed via malicious MS Word e-mail attachments.[256][257][258]
+
+S0433	Rifdoor	
+Rifdoor has been executed from malicious Excel or Word documents containing macros.[259]
+
+S0240	ROKRAT	
+ROKRAT has relied upon users clicking on a malicious attachment delivered through spearphishing.[260]
+
+S0148	RTM	
+RTM has relied on users opening malicious email attachments, decompressing the attached archive, and double-clicking the executable within.[261]
+
+G0048	RTM	
+RTM has attempted to lure victims into opening e-mail attachments to execute malicious code.[262]
+
+G1031	Saint Bear	
+Saint Bear relies on user interaction and execution of malicious attachments and similar for initial execution on victim systems.[227]
+
+S1018	Saint Bot	
+Saint Bot has relied on users to execute a malicious attachment delivered via spearphishing.[263][227]
+
+G0034	Sandworm Team	
+Sandworm Team has tricked unwitting recipients into clicking on spearphishing attachments and enabling malicious macros embedded within files.[264][265]
+
+G1008	SideCopy	
+SideCopy has attempted to lure victims into clicking on malicious embedded archive files sent via spearphishing campaigns.[266]
+
+G0121	Sidewinder	
+Sidewinder has lured targets to click on malicious files to gain execution in the target environment.[267][268][269][270]
+
+G0091	Silence	
+Silence attempts to get users to launch malicious attachments delivered via spearphishing emails.[271][272][273]
+
+S1086	Snip3	
+Snip3 can gain execution through the download of visual basic files.[274][275]
+
+S0390	SQLRat	
+SQLRat relies on users clicking on an embedded image to execute the scripts.[276]
+
+S1030	Squirrelwaffle	
+Squirrelwaffle has relied on users enabling malicious macros within Microsoft Excel and Word attachments.[277][278]
+
+G1033	Star Blizzard	
+Star Blizzard has lured targets into opening malicious .pdf files to deliver malware.[279]
+
+S1037	STARWHALE	
+STARWHALE has relied on victims opening a malicious Excel file for execution.[186]
+
+S1238	STATICPLUGIN	
+STATICPLUGIN has required user execution to load subsequent malicious payloads.[280]
+
+G1046	Storm-1811	
+Storm-1811 has prompted users to execute downloaded software and payloads as the result of social engineering activity.[281][282][283]
+
+S1183	StrelaStealer	
+StrelaStealer relies on user execution of a malicious file for installation.[284]
+
+S0491	StrongPity	
+StrongPity has been executed via compromised installation files for legitimate software including compression applications, security software, browsers, file recovery applications, and other tools and utilities.[233][234]
+
+S1042	SUGARDUMP	
+Some SUGARDUMP variants required a user to enable a macro within a malicious .xls file for execution.[285]
+
+S1064	SVCReady	
+SVCReady has relied on users clicking a malicious attachment delivered through spearphishing.[286]
+
+S0464	SYSCON	
+SYSCON has been executed by luring victims to open malicious e-mail attachments.[287]
+
+G1018	TA2541	
+TA2541 has used macro-enabled MS Word documents to lure victims into executing malicious payloads.[288][289][275]
+
+G0062	TA459	
+TA459 has attempted to get victims to open malicious Microsoft Word attachment sent via spearphishing.[290]
+
+G0092	TA505	
+TA505 has used lures to get users to enable content in malicious attachments and execute malicious files contained in archives. For example, TA505 makes their malware look like legitimate Microsoft Word documents, .pdf and/or .lnk files. [291][292][293][294][295][296][297][298][299]
+
+G0127	TA551	
+TA551 has prompted users to enable macros within spearphishing attachments to install malware.[300]
+
+S0011	Taidoor	
+Taidoor has relied upon a victim to click on a malicious email attachment.[301]
+
+G0089	The White Company	
+The White Company has used phishing lure documents that trick users into opening them and infecting their computers.[302]
+
+G0027	Threat Group-3390	
+Threat Group-3390 has lured victims into opening malicious files containing malware.[67]
+
+S0665	ThreatNeedle	
+ThreatNeedle relies on a victim to click on a malicious document for initial execution.[148]
+
+G0131	Tonto Team	
+Tonto Team has relied on user interaction to open their malicious RTF documents.[303][44]
+
+G0134	Transparent Tribe	
+Transparent Tribe has used weaponized documents in e-mail to compromise targeted systems.[304][305][306][307][308]
+
+S0266	TrickBot	
+TrickBot has attempted to get users to launch malicious documents to deliver its payload. [309][310]
+
+G0081	Tropic Trooper	
+Tropic Trooper has lured victims into executing malware via malicious e-mail attachments.[311]
+
+S0263	TYPEFRAME	
+A Word document delivering TYPEFRAME prompts the user to enable macro execution.[312]
+
+S0476	Valak	
+Valak has been executed via Microsoft Word documents containing malicious macros.[313][314][315]
+
+S0670	WarzoneRAT	
+WarzoneRAT has relied on a victim to open a malicious attachment within an email for execution.[316][70]
+
+C0037	Water Curupira Pikabot Distribution	
+Water Curupira Pikabot Distribution delivered Pikabot installers as password-protected ZIP files containing heavily obfuscated JavaScript, or IMG files containing an LNK mimicking a Word document and a malicious DLL.[317]
+
+G0107	Whitefly	
+Whitefly has used malicious .exe or .dll files disguised as documents or images.[318]
+
+G0112	Windshift	
+Windshift has used e-mail attachments to lure victims into executing malicious code.[319]
+
+G0090	WIRTE	
+WIRTE has attempted to lure users into opening malicious MS Word and Excel files to execute malicious payloads.[320]
+
+G0102	Wizard Spider	
+Wizard Spider has lured victims to execute malware with spearphishing attachments containing macros to download either Emotet, Bokbot, TrickBot, or Bazar.[321][322][323]
+
+S1065	Woody RAT	
+Woody RAT has relied on users opening a malicious email attachment for execution.[324]
+
+S1013	ZxxZ	
+ZxxZ has relied on victims to open a malicious attachment delivered via email.[45]
+
+Adversaries may rely on a user running a malicious image to facilitate execution. Amazon Web Services (AWS) Amazon Machine Images (AMIs), Google Cloud Platform (GCP) Images, and Azure Images as well as popular container runtimes such as Docker can be backdoored. Backdoored images may be uploaded to a public repository via Upload Malware, and users may then download and deploy an instance or container from the image without realizing the image is malicious, thus bypassing techniques that specifically achieve Initial Access. This can lead to the execution of malicious code, such as code that executes cryptocurrency mining, in the instance or container.[1]
+
+Adversaries may also name images a certain way to increase the chance of users mistakenly deploying an instance or container from the image (ex: Match Legitimate Resource Name or Location).[2]
+
+ID: T1204.003
+Sub-technique of:  T1204
+ⓘ
+Tactic: Execution
+ⓘ
+Platforms: Containers, IaaS
+Contributors: Center for Threat-Informed Defense (CTID); Vishwas Manral, McAfee
+Version: 1.2
+Created: 30 March 2021
+Last Modified: 24 October 2025
+Version Permalink
+Procedure Examples
+ID	Name	Description
+G0139	TeamTNT	
+TeamTNT has relied on users to download and execute malicious Docker images.[3]
+
+Mitigations
+ID	Mitigation	Description
+M1047	Audit	
+Audit images deployed within the environment to ensure they do not contain any malicious components.
+
+M1045	Code Signing	
+Utilize a trust model such as Docker Content Trust with digital signatures to ensure runtime verification of the integrity and publisher of specific image tags.[4][5]
+
+M1031	Network Intrusion Prevention	
+Network prevention intrusion systems and systems designed to scan and remove malicious downloads can be used to block activity.
+
+M1017	User Training	
+Train users to be aware of the existence of malicious images and how to avoid deploying instances and containers from them.
+
+An adversary may rely upon a user copying and pasting code in order to gain execution. Users may be subjected to social engineering to get them to copy and paste code directly into a Command and Scripting Interpreter. One such strategy is "ClickFix," in which adversaries present users with seemingly helpful solutions—such as prompts to fix errors or complete CAPTCHAs—that instead instruct the user to copy and paste malicious code.
+
+Malicious websites, such as those used in Drive-by Compromise, may present fake error messages or CAPTCHA prompts that instruct users to open a terminal or the Windows Run Dialog box and execute an arbitrary command. These commands may be obfuscated using encoding or other techniques to conceal malicious intent. Once executed, the adversary will typically be able to establish a foothold on the victim's machine.[1][2][3][4]
+
+Adversaries may also leverage phishing emails for this purpose. When a user attempts to open an attachment, they may be presented with a fake error and offered a malicious command to paste as a solution, consistent with the "ClickFix" strategy.[5][6]
+
+Tricking a user into executing a command themselves may help to bypass email filtering, browser sandboxing, or other mitigations designed to protect users against malicious downloaded files.
+
+ID: T1204.004
+Sub-technique of:  T1204
+ⓘ
+Tactic: Execution
+ⓘ
+Platforms: Linux, Windows, macOS
+Contributors: Ale Houspanossian; Fernando Bacchin; Gabriel Currie; Harikrishnan Muthu, Cyble; Menachem Goldstein; ReliaQuest; SeungYoul Yoo, Ahn Lab
+Version: 1.1
+Created: 18 March 2025
+Last Modified: 05 October 2025
+Version Permalink
+Procedure Examples
+ID	Name	Description
+G1052	Contagious Interview	
+Contagious Interview has leveraged ClickFix type tactics enticing victims to copy and paste malicious code.[7][2][8]
+
+S1229	Havoc	
+The Havoc infection chain has been initiated via ClickFix lures in phishing emails.[9]
+
+Adversaries may rely on a user installing a malicious library to facilitate execution. Threat actors may Upload Malware to package managers such as NPM and PyPi, as well as to public code repositories such as GitHub. User may install libraries without realizing they are malicious, thus bypassing techniques that specifically achieve Initial Access. This can lead to the execution of malicious code, such as code that establishes persistence, steals data, or mines cryptocurrency.[1][2]
+
+In some cases, threat actors may compromise and backdoor existing popular libraries (i.e., Compromise Software Dependencies and Development Tools). Alternatively, they may create entirely new packages and leverage behaviors such as typosquatting to encourage users to install them.
+
+ID: T1204.005
+Sub-technique of:  T1204
+ⓘ
+Tactic: Execution
+ⓘ
+Platforms: Linux, Windows, macOS
+Version: 1.0
+Created: 22 May 2025
+Last Modified: 22 May 2025
+Version Permalink
+Procedure Examples
+ID	Name	Description
+G1052	Contagious Interview	
+Contagious Interview has relied on users to install a malicious library from a code repository to infect the victim's device and has led to additional payload distribution and theft of sensitive data.[3][4][5][6][7][8][9][10][11][12]
+
+Mitigations
+ID	Mitigation	Description
+M1033	Limit Software Installation	
+Where possible, consider requiring developers to pull from internal repositories containing verified and approved packages rather than from external ones.
+
+M1031	Network Intrusion Prevention	
+Network prevention intrusion systems and systems designed to scan and remove malicious downloads can be used to block activity.
+
+M1017	User Training	
+Train developers to be aware of the existence of malicious libraries and how to avoid installing them.

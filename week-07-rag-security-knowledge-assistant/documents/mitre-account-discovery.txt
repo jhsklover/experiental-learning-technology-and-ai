@@ -1,0 +1,445 @@
+Description
+Adversaries may attempt to get a listing of local system accounts. This information can help adversaries determine which local accounts exist on a system to aid in follow-on behavior.
+
+Commands such as net user and net localgroup of the Net utility and id and groups on macOS and Linux can list local users and groups.[1][2][3] On Linux, local users can also be enumerated through the use of the /etc/passwd file. On macOS, the dscl . list /Users command can be used to enumerate local accounts. On ESXi servers, the esxcli system account list command can list local user accounts.[4]
+
+Procedure Examples
+ID	Name	Description
+G0018	admin@338	
+admin@338 actors used the following commands following exploitation of a machine with LOWBALL malware to enumerate user accounts: net user >> %temp%\download net user /domain >> %temp%\download[5]
+
+S0331	Agent Tesla	
+Agent Tesla can collect account information from the victim’s machine.[6]
+
+G0006	APT1	
+APT1 used the commands net localgroup,net user, and net group to find accounts on the system.[1]
+
+G0022	APT3	
+APT3 has used a tool that can obtain info about local and global group users, power users, and administrators.[7]
+
+G0050	APT32	
+APT32 enumerated administrative users using the commands net localgroup administrators.[8]
+
+G0096	APT41	
+APT41 used built-in net commands to enumerate local administrator groups.[9]
+
+G1044	APT42	
+APT42 has used the PowerShell-based POWERPOST script to collect local account names from the victim machine.[10]
+
+S0239	Bankshot	
+Bankshot gathers domain and account names/information through process monitoring.[11]
+
+S0534	Bazar	
+Bazar can identify administrator accounts on an infected host.[12]
+
+S0570	BitPaymer	
+BitPaymer can enumerate the sessions for each user logged onto the infected host.[13]
+
+S0521	BloodHound	
+BloodHound can identify users with local administrator rights.[14]
+
+G0114	Chimera	
+Chimera has used net user for account discovery.[15]
+
+S0244	Comnie	
+Comnie uses the net user command.[16]
+
+S0038	Duqu	
+The discovery modules used with Duqu can collect information on accounts and permissions.[17]
+
+S1159	DUSTTRAP	
+DUSTTRAP can enumerate local user accounts.[18]
+
+S0081	Elise	
+Elise executes net user after initial communication is made to the remote server.[19]
+
+S0363	Empire	
+Empire can acquire local and domain user account information.[20]
+
+S0091	Epic	
+Epic gathers a list of all user accounts, privilege classes, and time of last logon.[21]
+
+G0117	Fox Kitten	
+Fox Kitten has accessed ntuser.dat and UserClass.dat on compromised hosts.[22]
+
+S0049	GeminiDuke	
+GeminiDuke collects information on local user accounts from the victim.[23]
+
+S0537	HyperStack	
+HyperStack can enumerate all account names on a remote share.[24]
+
+S1245	InvisibleFerret	
+InvisibleFerret has queried the victim device using Python scripts to obtain the User and Hostname.[25][26]
+
+S0260	InvisiMole	
+InvisiMole has a command to list account information on the victim’s machine.[27]
+
+S0265	Kazuar	
+Kazuar gathers information on local groups and members on the victim’s machine.[28]
+
+G0004	Ke3chang	
+Ke3chang performs account discovery using commands such as net localgroup administrators and net group "REDACTED" /domain on specific permissions groups.[29]
+
+S0236	Kwampirs	
+Kwampirs collects a list of accounts with the command net users.[30]
+
+G0030	Lotus Blossom	
+Lotus Blossom has used commands such as net to profile local system users.[31]
+
+G1051	Medusa Group	
+Medusa Group has leveraged net user for account discovery.[32]
+
+S1146	MgBot	
+MgBot includes modules for identifying local administrator accounts on victim systems.[33]
+
+S1015	Milan	
+Milan has run C:\Windows\system32\cmd.exe /c cmd /c dir c:\users\ /s 2>&1 to discover local accounts.[34]
+
+S0084	Mis-Type	
+Mis-Type may create a file containing the results of the command cmd.exe /c net user {Username}.[35]
+
+G1009	Moses Staff	
+Moses Staff has collected the administrator username from a compromised host.[36]
+
+S0233	MURKYTOP	
+MURKYTOP has the capability to retrieve information about users on remote hosts.[37]
+
+S0039	Net	
+Commands under net user can be used in Net to gather information about and manipulate user accounts.[38]
+
+G0049	OilRig	
+OilRig has run net user, net user /domain, net group "domain admins" /domain, and net group "Exchange Trusted Subsystem" /domain to get account listings on a victim.[39]
+
+C0012	Operation CuckooBees	
+During Operation CuckooBees, the threat actors used the net user command to gather account information.[40]
+
+S0165	OSInfo	
+OSInfo enumerates local and domain users[7]
+
+S0598	P.A.S. Webshell	
+P.A.S. Webshell can display the /etc/passwd file on a compromised host.[41]
+
+S1145	Pikabot	
+Pikabot will retrieve the name of the user associated with the thread under which the malware is executing.[42]
+
+S0453	Pony	
+Pony has used the NetUserEnum function to enumerate local accounts.[43]
+
+G0033	Poseidon Group	
+Poseidon Group searches for administrator accounts on both the local victim machine and the network.[44]
+
+S0378	PoshC2	
+PoshC2 can enumerate local and domain user account information.[45]
+
+S0194	PowerSploit	
+PowerSploit's Get-ProcessTokenGroup Privesc-PowerUp module can enumerate all SIDs associated with its current token.[46][47]
+
+S0223	POWERSTATS	
+POWERSTATS can retrieve usernames from compromised hosts.[48]
+
+S0196	PUNCHBUGGY	
+PUNCHBUGGY can gather user names.[49]
+
+S0192	Pupy	
+Pupy uses PowerView and Pywerview to perform discovery commands such as net user, net group, net local group, etc.[50]
+
+S1242	Qilin	
+Qilin can list all local users found on a targeted system.[51]
+
+S1148	Raccoon Stealer	
+Raccoon Stealer checks the privileges of running processes to determine if the running user is equivalent to NT Authority\System.[52]
+
+S0241	RATANKBA	
+RATANKBA uses the net user command.[53]
+
+G1039	RedCurl	
+RedCurl has collected information about local accounts.[54][55]
+
+S1240	RedLine Stealer	
+RedLine Stealer has collected account information from the victim’s machine.[56][57]
+
+S0125	Remsec	
+Remsec can obtain a list of users.[58]
+
+S0085	S-Type	
+S-Type has run the command net user on a victim.[35]
+
+S0063	SHOTPUT	
+SHOTPUT has a command to retrieve information about connected users.[59]
+
+S0649	SMOKEDHAM	
+SMOKEDHAM has used net.exe user and net.exe users to enumerate local accounts on a compromised host.[60]
+
+S0516	SoreFang	
+SoreFang can collect usernames from the local system via net.exe user.[61]
+
+S0603	Stuxnet	
+Stuxnet enumerates user accounts of the local host.[62]
+
+G0027	Threat Group-3390	
+Threat Group-3390 has used net user to conduct internal discovery of systems.[63]
+
+S0266	TrickBot	
+TrickBot collects the users of the system.[64][65]
+
+G0010	Turla	
+Turla has used net user to enumerate local accounts on the system.[66][67]
+
+S0452	USBferry	
+USBferry can use net user to gather information about local accounts.[68]
+
+S0476	Valak	
+Valak has the ability to enumerate local admin accounts.[69]
+
+G1017	Volt Typhoon	
+Volt Typhoon has executed net user and quser to enumerate local account information.[70]
+
+Adversaries may attempt to get a listing of domain accounts. This information can help adversaries determine which domain accounts exist to aid in follow-on behavior such as targeting specific accounts which possess particular privileges.
+
+Commands such as net user /domain and net group /domain of the Net utility, dscacheutil -q group on macOS, and ldapsearch on Linux can list domain users and groups. PowerShell cmdlets including Get-ADUser and Get-ADGroupMember may enumerate members of Active Directory groups.[1]
+
+Procedure Examples
+ID	Name	Description
+S0552	AdFind	
+AdFind can enumerate domain users.[2][3][4][5][6]
+
+G0096	APT41	
+APT41 used built-in net commands to enumerate domain administrator users.[7]
+
+S0239	Bankshot	
+Bankshot gathers domain and account names/information through process monitoring.[8]
+
+S0534	Bazar	
+Bazar has the ability to identify domain administrator accounts.[9][10]
+
+G1043	BlackByte	
+BlackByte has used tools such as AdFind to identify and enumerate domain accounts.[11]
+
+S1068	BlackCat	
+BlackCat can utilize net use commands to identify domain users.[12]
+
+S0521	BloodHound	
+BloodHound can collect information about domain users, including identification of domain admin accounts.[13]
+
+S0635	BoomBox	
+BoomBox has the ability to execute an LDAP query to enumerate the distinguished name, SAM account name, and display name for all domain users.[14]
+
+G0060	BRONZE BUTLER	
+BRONZE BUTLER has used net user /domain to identify account information.[15]
+
+S1063	Brute Ratel C4	
+Brute Ratel C4 can use LDAP queries, net group "Domain Admins" /domain and net user /domain for discovery.[16][17]
+
+G0114	Chimera	
+Chimera has has used net user /dom and net user Administrator to enumerate domain accounts including administrator accounts.[18][19]
+
+S0154	Cobalt Strike	
+Cobalt Strike can determine if the user on an infected machine is in the admin or domain admin group.[20]
+
+S0488	CrackMapExec	
+CrackMapExec can enumerate the domain user accounts on a targeted system.[21]
+
+G0035	Dragonfly	
+Dragonfly has used batch scripts to enumerate users on a victim domain controller.[22]
+
+S0105	dsquery	
+dsquery can be used to gather information on user accounts within a domain.[23][24]
+
+S1159	DUSTTRAP	
+DUSTTRAP can enumerate domain accounts.[25]
+
+S0363	Empire	
+Empire can acquire local and domain user account information.[26][27]
+
+G1016	FIN13	
+FIN13 can identify user accounts associated with a Service Principal Name and query Service Principal Names within the domain by utilizing the following scripts: GetUserSPNs.vbs and querySpn.vbs.[28][29]
+
+G0037	FIN6	
+FIN6 has used Metasploit’s PsExec NTDSGRAB module to obtain a copy of the victim's Active Directory database.[30]
+
+G0046	FIN7	
+FIN7 has used the PowerShell script 3CF9.ps1 and the executable WsTaskLoad to enumerate domain administrations by executing net group "Domain Admins" /domain.[31] FIN7 has also used csvde.exe, which is a built-in Windows command line tool, to export Active Directory information.
+
+G0117	Fox Kitten	
+Fox Kitten has used the Softerra LDAP browser to browse documentation on service accounts.[32]
+
+S1022	IceApple	
+The IceApple Active Directory Querier module can perform authenticated requests against an Active Directory server.[33]
+
+S0483	IcedID	
+IcedID can query LDAP and can use built-in net commands to identify additional users on the network to infect.[34][35]
+
+G1032	INC Ransom	
+INC Ransom has scanned for domain admin accounts in compromised environments.[36]
+
+G0004	Ke3chang	
+Ke3chang performs account discovery using commands such as net localgroup administrators and net group "REDACTED" /domain on specific permissions groups.[37]
+
+G1004	LAPSUS$	
+LAPSUS$ has used the AD Explorer tool to enumerate users on a victim's network.[38][39]
+
+S1160	Latrodectus	
+Latrodectus can run C:\Windows\System32\cmd.exe /c net group "Domain Admins" /domain to identify domain administrator accounts.[40]
+
+G0030	Lotus Blossom	
+Lotus Blossom has used net commands and tools such as AdFind to profile domain accounts associated with victim machines and make Active Directory queries.[41][42]
+
+G0045	menuPass	
+menuPass has used the Microsoft administration tool csvde.exe to export Active Directory data.[43]
+
+S1146	MgBot	
+MgBot includes modules for collecting information on Active Directory domain accounts.[44]
+
+G0069	MuddyWater	
+MuddyWater has used cmd.exe net user /domain to enumerate domain users.[45]
+
+G0129	Mustang Panda	
+Mustang Panda has utilized AdFind to identify domain users.[46]
+
+S0039	Net	
+Net commands used with the /domain flag can be used to gather information about and manipulate user accounts on the current domain.[47]
+
+G0049	OilRig	
+OilRig has run net user, net user /domain, net group "domain admins" /domain, and net group "Exchange Trusted Subsystem" /domain to get account listings on a victim.[48]
+
+C0012	Operation CuckooBees	
+During Operation CuckooBees, the threat actors used the dsquery and dsget commands to get domain environment information and to query users in administrative groups.[49]
+
+C0022	Operation Dream Job	
+During Operation Dream Job, Lazarus Group queried compromised victim's active directory servers to obtain the list of employees including administrator accounts.[50]
+
+C0014	Operation Wocao	
+During Operation Wocao, threat actors used the net command to retrieve information about domain accounts.[51]
+
+S0165	OSInfo	
+OSInfo enumerates local and domain users[52]
+
+G0033	Poseidon Group	
+Poseidon Group searches for administrator accounts on both the local victim machine and the network.[53]
+
+S0378	PoshC2	
+PoshC2 can enumerate local and domain user account information.[54]
+
+S0184	POWRUNER	
+POWRUNER may collect user account information by running net user /domain or a series of other commands on a victim.[55]
+
+G1039	RedCurl	
+RedCurl has collected information about domain accounts using SysInternal’s AdExplorer functionality .[56][57]
+
+G0034	Sandworm Team	
+Sandworm Team has used a tool to query Active Directory using LDAP, discovering information about usernames listed in AD.[58]
+
+G1015	Scattered Spider	
+Scattered Spider has enumerated legitimate domain accounts which are used in the targeted environment.[59][60][61][62]
+
+S0692	SILENTTRINITY	
+SILENTTRINITY can use System.Security.AccessControl namespaces to retrieve domain user information.[63]
+
+C0024	SolarWinds Compromise	
+During the SolarWinds Compromise, APT29 used PowerShell to discover domain accounts by exectuing Get-ADUser and Get-ADGroupMember.[1][64]
+
+S0516	SoreFang	
+SoreFang can enumerate domain accounts via net.exe user /domain.[65]
+
+G1053	Storm-0501	
+Storm-0501 has utilized an obfuscated version of the Active Directory reconnaissance tool ADRecon.ps1 (obfs.ps1 or recon.ps1) to discover domain accounts.[66]
+
+G1046	Storm-1811	
+Storm-1811 has performed domain account enumeration during intrusions.[67]
+
+S0603	Stuxnet	
+Stuxnet enumerates user accounts of the domain.[68]
+
+S0018	Sykipot	
+Sykipot may use net group "domain admins" /domain to display accounts in the "domain admins" permissions group and net localgroup "administrators" to list local system administrator group membership.[69]
+
+G1022	ToddyCat	
+ToddyCat has run net user %USER% /dom for account discovery.[70]
+
+G0010	Turla	
+Turla has used net user /domain to enumerate domain accounts.[71]
+
+S0476	Valak	
+Valak has the ability to enumerate domain admin accounts.[72]
+
+G1017	Volt Typhoon	
+Volt Typhoon has run net group /dom and net group "Domain Admins" /dom in compromised environments for account discovery.[73][74]
+
+G0102	Wizard Spider	
+Wizard Spider has identified domain admins through the use of net group "Domain admins" /DOMAIN. Wizard Spider has also leveraged the PowerShell cmdlet Get-ADComputer to collect account names from Active Directory data.[10][75]
+
+Adversaries may attempt to get a listing of email addresses and accounts. Adversaries may try to dump Exchange address lists such as global address lists (GALs).[1]
+
+In on-premises Exchange and Exchange Online, the Get-GlobalAddressList PowerShell cmdlet can be used to obtain email addresses and accounts from a domain using an authenticated session.[2][3]
+
+In Google Workspace, the GAL is shared with Microsoft Outlook users through the Google Workspace Sync for Microsoft Outlook (GWSMO) service. Additionally, the Google Workspace Directory allows for users to get a listing of other users within the organization.[4]
+
+Procedure Examples
+ID	Name	Description
+S0093	Backdoor.Oldrea	
+Backdoor.Oldrea collects address book information from Outlook.[5]
+
+S0635	BoomBox	
+BoomBox can execute an LDAP query to discover e-mail accounts for domain users.[6]
+
+C0027	C0027	
+During C0027, Scattered Spider accessed Azure AD to identify email addresses.[7]
+
+S0367	Emotet	
+Emotet has been observed leveraging a module that can scrape email addresses from Outlook.[8][9][10]
+
+S0531	Grandoreiro	
+Grandoreiro can parse Outlook .pst files to extract e-mail addresses.[11]
+
+C0038	HomeLand Justice	
+During HomeLand Justice, threat actors used compromised Exchange accounts to search mailboxes for administrator accounts.[12]
+
+S0681	Lizar	
+Lizar can collect email accounts from Microsoft Outlook and Mozilla Thunderbird.[13]
+
+G0059	Magic Hound	
+Magic Hound has used Powershell to discover email accounts.[14]
+
+S0413	MailSniper	
+MailSniper can be used to obtain account names from Exchange and Office 365 using the Get-GlobalAddressList cmdlet.[3]
+
+G1039	RedCurl	
+RedCurl has collected information about email accounts.[15][16]
+
+S0358	Ruler	
+Ruler can be used to enumerate Exchange users and dump the GAL.[17]
+
+G0034	Sandworm Team	
+Sandworm Team used malware to enumerate email settings, including usernames and passwords, from the M.E.Doc application.[18]
+
+G0092	TA505	
+TA505 has used the tool EmailStealer to steal and send lists of e-mail addresses to a remote server.[19]
+
+S0266	TrickBot	
+TrickBot collects email addresses from Outlook.[20]
+
+Adversaries may attempt to get a listing of cloud accounts. Cloud accounts are those created and configured by an organization for use by users, remote support, services, or for administration of resources within a cloud service provider or SaaS application.
+
+With authenticated access there are several tools that can be used to find accounts. The Get-MsolRoleMember PowerShell cmdlet can be used to obtain account names given a role or permissions group in Office 365.[1][2] The Azure CLI (AZ CLI) also provides an interface to obtain user accounts with authenticated access to a domain. The command az ad user list will list all users within a domain.[3][4]
+
+The AWS command aws iam list-users may be used to obtain a list of users in the current account while aws iam list-roles can obtain IAM roles that have a specified path prefix.[5][6] In GCP, gcloud iam service-accounts list and gcloud projects get-iam-policy may be used to obtain a listing of service accounts and users in a project.[7]
+
+Procedure Examples
+ID	Name	Description
+S0677	AADInternals	
+AADInternals can enumerate Azure AD users.[8]
+
+G0016	APT29	
+APT29 has conducted enumeration of Azure AD accounts.[9]
+
+C0027	C0027	
+During C0027, Scattered Spider accessed Azure AD to download bulk lists of group members and to identify privileged users, along with the email addresses and AD attributes.[10]
+
+S1091	Pacu	
+Pacu can enumerate IAM users, roles, and groups. [11]
+
+S0684	ROADTools	
+ROADTools can enumerate Azure AD users.[12]
+
+G1053	Storm-0501	
+Storm-0501 has conducted enumeration of users, roles, and resources within victim Azure tenants using the tool Azurehound.[13]
