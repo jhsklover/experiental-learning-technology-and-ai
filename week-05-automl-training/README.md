@@ -5,7 +5,8 @@ generic vs fine-tuned Hugging Face models for the **Transaction Ingestion Workfl
 of our **Financial Fraud Detection System** capstone.
 
 ## Tools
-- 
+- Hugging Face (`distilbert-sst-2`, `bert-tiny-finetuned-sms-spam-detection`, `roberta-spam`)
+- Teachable Machine
 
 ## Custom Model Training
 - Built a **Authentic/Forged** image classifier with Teachable Machine
