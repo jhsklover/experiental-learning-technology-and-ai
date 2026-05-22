@@ -1,8 +1,11 @@
 # Week 5: AutoML & No-Code Model Training 
 
 Trained a custom image classifier with Google Teachable Machine and compared 
-generic vs fine-tuned Hugging Face models for the **Transaction Ingestion Workflow** component 
+generic vs fine-tuned Hugging Face models for the **Transaction Ingestion Workflow** component
 of our **Financial Fraud Detection System** capstone.
+
+## Tools
+- 
 
 ## Custom Model Training
 - Built a **Authentic/Forged** image classifier with Teachable Machine
